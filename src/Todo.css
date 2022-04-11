@@ -64,3 +64,6 @@ i{
     padding: 20px;
     background-color: white;
 }
+.hide{
+    display: none;
+}
