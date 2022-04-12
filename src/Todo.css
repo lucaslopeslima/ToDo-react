@@ -111,6 +111,31 @@ i{
     box-shadow: 2px 2px 5px 2px #00000053;
     /* -webkit-box-shadow: 5px 5px 15px 5px #000000;  */
 }
+
+.cardModal input{
+    height: 20px;
+    border: 1px solid #c5c4c4;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+}
+.cardModal input:focus{
+    border: 1px solid #8c8c8c !important;
+}
+.bt-add{
+    background-color: #87ceeb;
+    color: white;
+    border: none;
+    height: 28px;
+    border-radius: 5px;
+    transition: all .2s ease;
+    box-shadow: 2px 2px 5px 1px #00000053;
+}
+.bt-add:hover{
+    background-color: #a3e1f9
+}
+.bt-add:active{
+    box-shadow: 0px 0px 5px 0px #00000053
+}
 .addButton:hover{
     background-color: #a3e1f9;
 }
@@ -131,7 +156,8 @@ i{
 }
 .cardModal{
     padding: 20px;
-    background-color: white;
+    border-radius: 10px;
+    background-color: rgb(237, 237, 237);
 }
 .hide{
     display: none;

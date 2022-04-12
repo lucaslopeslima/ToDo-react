@@ -6,6 +6,7 @@ function TodoForm(props){
     function handleChange(event){
         let t = event.target.value;
         setText(t)
+
     }
     function addItem(event){
         event.preventDefault()
@@ -17,7 +18,7 @@ function TodoForm(props){
     }
 
     return(<form>
-        <input onChange={handleChange} type="text" value={text}></input>
+        <input id="input" onChange={handleChange} type="text" autoFocus value={text} ></input>
         <button className="bt-add" onClick={addItem}>Adicionar Tarefa</button>
     </form>)
 }
