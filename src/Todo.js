@@ -35,7 +35,7 @@ function Todo(){
     
 
     function onItemDeleted(item){
-        let filteredItems = items.filter(it=>it.id != item.id)
+        let filteredItems = items.filter(it => it.id !== item.id)
         setItems(filteredItems)
     }
 
@@ -55,7 +55,13 @@ function Todo(){
 
     return (<div className="container">
         
-        <header className="header"><h1>Tarefas do Dia</h1> <button onClick={()=>{setShowModal(true)}} className="addButton">+</button></header>
+        <header className="header">
+            <h1>My To Do <span>list</span> </h1>
+            <div className="wrap">
+                <h2>Tarefas do Dia</h2>
+                <button onClick={()=>{setShowModal(true)}} className="addButton">+</button>
+            </div>
+        </header>
 
         {/* <TodoForm onAddItem={onAddItem}></TodoForm> */}
 
